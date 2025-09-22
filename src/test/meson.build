@@ -514,6 +514,11 @@ executables += [
                 'type' : 'manual',
         },
         core_test_template + {
+                'sources' : files('test-memory-ksm.c'),
+                'dependencies' : common_test_dependencies,
+                'type' : 'manual',
+        },
+        core_test_template + {
                 'sources' : files('test-cgroup-cpu.c'),
         },
         core_test_template + {
